@@ -1,0 +1,15 @@
+trigger:
+  - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: nkbali/sharedpipeline
+      endpoint: github.com_nkbali
+
+jobs:
+  - template: shared.yml@templates  # Template reference
