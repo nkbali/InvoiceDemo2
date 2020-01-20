@@ -10,9 +10,9 @@ pool:
 resources:
   repositories:
     - repository: templates
-      type: github
-      name: nkbali/sharedpipeline
-      endpoint: github.com_nkbali
+      type: bitbucket
+      name: mtngroup/azure-shared-pipeline
+      endpoint: Bitbucket
 
 jobs:
   - template: shared.yml@templates  # Template reference
